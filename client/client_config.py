@@ -1,0 +1,22 @@
+PROTOCOL = 'http'
+HOST = 'client'
+PORT = 8777
+
+
+NODE_PROTOCOL = 'http'
+NODE_HOSTNAME = 'node'
+NODE_PORT = 4785
+NODE_METRICS_API = 'metrics'
+
+POSTGRES_PROTOCOL = 'postgresql'
+POSTGRES_HOSTNAME = 'postgres_server'
+POSTGRES_PORT = 5432
+POSTGRES_METRICS_DB = 'metrics_db'
+POSTGRES_USERNAME = 'postgres'
+POSTGRES_PASSWORD = 'admin'
+
+
+
+
+
+
