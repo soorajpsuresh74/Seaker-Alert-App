@@ -37,6 +37,16 @@ services:
     volumes:
       - ./client:/client
 
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml  # Mount the Prometheus config
+    ports:
+      - "9090:9090"
+    networks:
+      - starnet
+
 networks:
   starnet:
     driver: bridge
