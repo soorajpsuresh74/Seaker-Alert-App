@@ -1,7 +1,15 @@
 global:
   scrape_interval: 5s
 
+rule_files:
+  - "alert_rules.yml"
+
 scrape_configs:
   - job_name: "client-metrics"
     static_configs:
       - targets: ["client:8777"]
+
+  - job_name: 'postgres'
+    static_configs:
+      - targets: [ 'postgres_exporter:9187']
+

@@ -1,0 +1,42 @@
+groups:
+  - name: SystemAlerts
+    rules:
+      # High CPU Usage Alert
+      - alert: HighCPUUsage
+        expr: cpu_usage > 80
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU Usage"
+          description: "CPU usage is above 80% for more than 1 minute. Current value: {{ $value }}%"
+
+      # High RAM Usage Alert
+      - alert: HighRAMUsage
+        expr: ram_usage > 80
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High RAM Usage"
+          description: "RAM usage is above 80% for more than 1 minute. Current value: {{ $value }}%"
+
+      # High Disk Usage Alert
+      - alert: HighDiskUsage
+        expr: disk_usage > 9
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High Disk Usage"
+          description: "Disk usage is above 9 GB for more than 1 minute. Current value: {{ $value }} GB"
+
+      # Device Uptime Alert
+      - alert: LowDeviceUptime
+        expr: memory_low_alerts > 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Low Device Uptime"
+          description: "Device uptime is less than 3 minutes. This could indicate instability."
