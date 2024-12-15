@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b286357-0116-48f4-9b10-f7767063c7f7" name="Changes" comment="prometheus configuration added">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/prometheus.yml" afterDir="false" />
-    </list>
+    <list default="true" id="3b286357-0116-48f4-9b10-f7767063c7f7" name="Changes" comment="configurations are fixed some remains same" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,12 +110,21 @@
       <option name="project" value="LOCAL" />
       <updated>1734191165303</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="configurations are fixed some remains same">
+      <option name="closed" value="true" />
+      <created>1734275690818</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734275690818</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="prometheus configuration added" />
-    <option name="LAST_COMMIT_MESSAGE" value="prometheus configuration added" />
+    <MESSAGE value="configurations are fixed some remains same" />
+    <option name="LAST_COMMIT_MESSAGE" value="configurations are fixed some remains same" />
   </component>
 </project>
