@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b286357-0116-48f4-9b10-f7767063c7f7" name="Changes" comment="License added" />
+    <list default="true" id="3b286357-0116-48f4-9b10-f7767063c7f7" name="Changes" comment="License added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alert_rules.yml" beforeDir="false" afterPath="$PROJECT_DIR$/alert_rules.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/prometheusClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/prometheusClient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/node_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/node/node_config.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

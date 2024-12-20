@@ -1,42 +1,49 @@
 groups:
   - name: SystemAlerts
     rules:
-      # High CPU Usage Alert
       - alert: HighCPUUsage
-        expr: cpu_usage > 80
-        for: 1m
+        expr: cpu_usage > 50
+        for: 10s
         labels:
           severity: warning
         annotations:
           summary: "High CPU Usage"
-          description: "CPU usage is above 80% for more than 1 minute. Current value: {{ $value }}%"
+          description: "CPU usage is above 80% for more than 1 minute."
 
-      # High RAM Usage Alert
       - alert: HighRAMUsage
-        expr: ram_usage > 80
-        for: 1m
+        expr: ram_usage > 1
+        for: 10s
         labels:
           severity: warning
         annotations:
           summary: "High RAM Usage"
-          description: "RAM usage is above 80% for more than 1 minute. Current value: {{ $value }}%"
+          description: "RAM usage is above 16 GB for more than 10 seconds."
 
-      # High Disk Usage Alert
       - alert: HighDiskUsage
-        expr: disk_usage > 9
-        for: 1m
+        expr: disk_usage > 7
+        for: 10s
         labels:
           severity: critical
         annotations:
           summary: "High Disk Usage"
-          description: "Disk usage is above 9 GB for more than 1 minute. Current value: {{ $value }} GB"
+          description: "Disk usage is above 2 GB for more than 10 seconds."
 
       # Device Uptime Alert
       - alert: LowDeviceUptime
-        expr: memory_low_alerts > 0
-        for: 1m
+        expr: device_uptime < 3
+        for: 10s
         labels:
           severity: critical
         annotations:
           summary: "Low Device Uptime"
           description: "Device uptime is less than 3 minutes. This could indicate instability."
+
+      # Device Temperature Alert
+      - alert: HighDeviceTemperature
+        expr: device_temperature > 75
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "High Temperature"
+          description: "Device has high temperature. This could indicate instability."

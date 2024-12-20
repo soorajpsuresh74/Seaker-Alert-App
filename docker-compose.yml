@@ -20,7 +20,7 @@ services:
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: metrics_db
     ports:
-      - "8082:5432"
+      - "5432:5432"
     networks:
       - starnet
     volumes:
@@ -43,7 +43,7 @@ services:
       context: ./client
     container_name: client
     ports:
-      - "8081:8777"
+      - "8777:8777"
     networks:
       - starnet
     volumes:
@@ -61,7 +61,7 @@ services:
       - starnet
     depends_on:
       - postgres_exporter
-      - client
+      - client  # Ensure Prometheus can access metrics
 
   grafana:
     image: grafana/grafana
