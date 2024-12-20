@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b286357-0116-48f4-9b10-f7767063c7f7" name="Changes" comment="License added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alert_rules.yml" beforeDir="false" afterPath="$PROJECT_DIR$/alert_rules.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/prometheusClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/prometheusClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/node_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/node/node_config.py" afterDir="false" />
-    </list>
+    <list default="true" id="3b286357-0116-48f4-9b10-f7767063c7f7" name="Changes" comment="new code fixes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,7 +134,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734275829533</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Improved code">
+      <option name="closed" value="true" />
+      <created>1734681741150</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734681741150</updated>
+    </task>
+    <task id="LOCAL-00007" summary="new code fixes">
+      <option name="closed" value="true" />
+      <created>1734681778168</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734681778168</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -148,6 +158,8 @@
     <MESSAGE value="prometheus configuration added" />
     <MESSAGE value="configurations are fixed some remains same" />
     <MESSAGE value="License added" />
-    <option name="LAST_COMMIT_MESSAGE" value="License added" />
+    <MESSAGE value="Improved code" />
+    <MESSAGE value="new code fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="new code fixes" />
   </component>
 </project>
