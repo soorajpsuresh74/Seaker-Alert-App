@@ -2,7 +2,7 @@ groups:
   - name: SystemAlerts
     rules:
       - alert: HighCPUUsage
-        expr: cpu_usage > 50
+        expr: cpu_usage > 40
         for: 10s
         labels:
           severity: warning
